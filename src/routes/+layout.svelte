@@ -1,14 +1,15 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from '$lib/component/Header.svelte';
+	import About from '$lib/component/About.svelte';
+	import Projects from '$lib/component/Projects.svelte';
+	import Contact from '$lib/component/Contact.svelte';
 	import './styles.css';
-	import "../app.css";
 </script>
 
-<div class="app">
+
+<main>
 	<Header />
-
-	<main>
-		<slot />
-	</main>
-</div>
-
+	<About />
+	<Projects />
+	<Contact />  
+</main>
