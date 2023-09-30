@@ -1,7 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import Typed from 'typed.js';
-    import girlIMage from '$lib/images/girl_typing_transparent.gif'
+  import girlIMage from '$lib/images/girl_typing_transparent.gif';
+
 	let typed;
 
 	onMount(() => {
@@ -26,8 +27,7 @@
       background-color: #0a0a0a;
       color: #00ff00;
       padding: 2rem;
-      border: 2px solid #00ff00;
-      border-radius: 8px;
+      border: 2px solid #1e3551;
     }
   </style>
   

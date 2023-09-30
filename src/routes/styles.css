@@ -46,11 +46,11 @@
   
   ::-webkit-scrollbar-thumb {
     border-radius: 12px;
-    background: linear-gradient(135deg, #00FF00, #000); /* Green to Black gradient */
+    background: linear-gradient(135deg, #3b7bc8, #000); /* Green to Black gradient */
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #f57308, #fff, rgb(11, 242, 7));
+    background: linear-gradient(135deg, #000, #fff, #3b7bc8);
   }
   
   /*  Simillar  */
@@ -109,6 +109,7 @@
     padding: 0 5px;
     transform: translateX(-50%);
   }
+
   
   /*  About  */
   .about {
@@ -182,8 +183,6 @@
     color: #fff;
     background: #111;
   }
-  
- 
   
   .services .serv-content .card {
     width: calc(33% - 20px);
