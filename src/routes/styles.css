@@ -633,8 +633,8 @@
   
   @media (max-width: 1104px) {
     .about .about-content .left img {
-      height: 350px;
-      width: 350px;
+      height: 250px;
+      width: 250px;
     }
     section .title::after {
       bottom: -8px;

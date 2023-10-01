@@ -11,7 +11,8 @@
         <nav class="hidden md:flex space-x-4 text-lg font-bold leading-10">
             <a href="#home" class="text-white hover:text-green-500 transition">Home</a>
             <a href="#about" class="text-white hover:text-green-500 transition">About</a>
-            <a href="#projects" class="text-white hover:text-green-500 transition">Portfolio</a>
+            <a href="#services" class="text-white hover:text-green-500 transition">Services</a>
+            <a href="#projects" class="text-white hover:text-green-500 transition">Project</a>
             <a href="#contact" class="text-white hover:text-green-500 transition">Contact</a>
         </nav>
         <div class="md:hidden">
@@ -23,7 +24,8 @@
     <ul class="py-4">
         <li><a href="#home" class="block py-2 hover:text-green-500 transition">Home</a></li>
         <li><a href="#about" class="block py-2 hover:text-green-500 transition">About</a></li>
-        <li><a href="#projects" class="block py-2 hover:text-green-500 transition">Portfolio</a></li>
+        <li><a href="#services" class="block py-2 hover:text-green-500 transition">Services</a></li>
+        <li><a href="#projects" class="block py-2 hover:text-green-500 transition">Project</a></li>
         <li><a href="#contact" class="block py-2 hover:text-green-500 transition">Contact</a></li>
     </ul>
 </div>

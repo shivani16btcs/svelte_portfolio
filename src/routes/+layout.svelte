@@ -17,7 +17,7 @@
 	<section id="about">
 		<About />
 	</section>
-	<section id="about">
+	<section id="services">
 		<Service />
 	</section>
 	<section id="projects">
