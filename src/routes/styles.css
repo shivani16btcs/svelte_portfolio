@@ -284,8 +284,6 @@
   .skills .skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
   }
   
   .skills .skills-content .right span {
