@@ -3,7 +3,6 @@
 </script>
 
 
-
 <section class="skills skill-head" id="skills">
 	<div class="max-width">
 		<h2 class="title">My Skills</h2>
