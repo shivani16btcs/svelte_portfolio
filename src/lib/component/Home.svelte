@@ -25,7 +25,7 @@
     .terminal {
       font-family: 'Courier New', monospace;
       background-color: #0a0a0a;
-      color: #00ff00;
+      color: #CCCCCC;
       padding: 2rem;
       border: 2px solid #1e3551;
     }

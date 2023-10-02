@@ -24,6 +24,9 @@
 	<section id="skills">
 		<Skill />
 	</section>
+	<section id="services">
+		<Service />
+	</section>
 	<section id="projects">
 		<Projects />
 	</section>

@@ -1,5 +1,5 @@
 <div class="content flex justify-center items-center">
-	<div class="profile-skills">
+	<div class="profile-skill-card">
 		<div>
 			<!-- <span id="sk1"></span> -->
 			<label
@@ -21,19 +21,19 @@
 					<path d="M35 60 Q 50 75 65 60" fill="transparent" stroke="#1e3551" stroke-width="2" />
 				</svg>
 			</label>
-			<ul class="skills skills1">
-				<li class="sk-cms"><span>CMS</span></li>
-				<li class="sk-dtb"><span>DDBB</span></li>
-				<li class="sk-dis"><span>Design</span></li>
-				<li class="sk-pro"><span>Programing</span></li>
-				<li class="sk-ani"><span>Animation</span></li>
+			<ul class="skill-card skill-card1">
+				<!-- <li class="sk-css"><span>C</span></li> -->
+				<li class="sk-htm"><span>Html</span></li>
+				<li class="sk-css"><span>CSS</span></li>
+				<li class="sk-js"><span>Javascript</span></li>
 				<li class="more">
-					<input type="checkbox" id="more-con" /><label for="more-con" />
+					<input type="checkbox" id="more-len" /><label for="more-len" />
 					<div>
-						<span>PHOTO</span><span>API</span><span>MAPS</span><span>VIDEO</span><span>CHARTS</span
-						><span>RWD</span>
+						<span>c</span><span>c++</span><span>typescript</span><span>SCSS</span><span
+							>SASS</span><span>Tailwind</span>
 					</div>
 				</li>
+				
 			</ul>
 		</div>
 		<div>
@@ -56,17 +56,15 @@
 					<path d="M35 60 Q 50 75 65 60" fill="transparent" stroke="#1e3551" stroke-width="2" />
 				</svg>
 			</label>
-			<ul class="skills skills2">
-				<li class="sk-gim"><span>Gimp</span></li>
-				<li class="sk-ado"><span>Adobe&nbsp;CC</span></li>
-				<li class="sk-not"><span>Notepad++</span></li>
-				<li class="sk-tri"><span>Tridion</span></li>
-				<li class="sk-wor"><span>Wordpress</span></li>
+			<ul class="skill-card skill-card2">
+				<li class="sk-ang"><span>Angular</span></li>
+				<li class="sk-svel"><span>Svelte</span></li>
+				<li class="sk-node"><span>Nodejs</span></li>
 				<li class="more">
 					<input type="checkbox" id="more-pro" /><label for="more-pro" />
 					<div>
-						<span>JOOMLA</span><span>DRUPAL</span><span>JIRA</span><span>TRELLO</span><span
-							>FILEZILLA</span
+						<span>API</span><span>Express.js</span><span>SQL</span><span>REST</span><span
+							>MongoDB</span
 						><span>GIT</span>
 					</div>
 				</li>
@@ -92,18 +90,15 @@
 					<path d="M35 60 Q 50 75 65 60" fill="transparent" stroke="#1e3551" stroke-width="2" />
 				</svg>
 			</label>
-			<ul class="skills skills3">
-				<li class="sk-css"><span>CSS</span></li>
-				<li class="sk-htm"><span>HTML</span></li>
-				<li class="sk-jav"><span>JS</span></li>
-				<li class="sk-php"><span>PHP</span></li>
-				<li class="sk-sql"><span>SQL</span></li>
+			<ul class="skill-card skill-card3">
+				<li class="sk-git"><span>GIT</span></li>
+				<li class="sk-npm"><span>npm</span></li>
+				<li class="sk-post"><span>Postman</span></li>
 				<li class="more">
-					<input type="checkbox" id="more-len" /><label for="more-len" />
+					<input type="checkbox" id="more-con" /><label for="more-con" />
 					<div>
-						<span>XHTML</span><span>XSL</span><span>XML</span><span>JSON</span><span>PUG</span><span
-							>SASS</span
-						>
+						<span>JIRA</span><span>TRELLO</span><span>CMS</span><span>Jenkins</span><span>Vercel</span>
+						<span>GIT</span>
 					</div>
 				</li>
 			</ul>
@@ -125,7 +120,7 @@
 		--t1: all 0.5s ease 0s;
 	}
 
-	body {
+	/* body {
 		margin: 0;
 		padding: 0;
 		width: 100vw;
@@ -145,14 +140,14 @@
 	*:after {
 		box-sizing: border-box;
 		content: '';
-	}
+	} */
 
 	.content {
 		width: 80vw;
 		background: #fff0;
 	}
 
-	.profile-skills {
+	.profile-skill-card {
 		display: flex;
 		top: 150px;
 		position: relative;
@@ -160,14 +155,14 @@
 		align-items: flex-start;
 	}
 
-	.profile-skills > div {
+	.profile-skill-card > div {
 		width: 32%;
 		margin-right: 3%;
 		border-radius: 2px;
 		position: relative;
 	}
 
-	ul.skills {
+	ul.skill-card {
 		width: 100%;
 		position: relative;
 		padding: 25px 35px;
@@ -179,9 +174,9 @@
 		);
 	}
 
-	ul.skills:before {
-		content: 'Skills';
-		text-transform: uppercase;
+	ul.skill-card:before {
+		content: 'Codes';
+		text-transform: capitalize;
 		position: absolute;
 		top: -75px;
 		height: 50px;
@@ -194,21 +189,21 @@
 		font-weight: 500;
 		z-index: 1;
 		transition: var(--t1);
-		font-size: 30px;
+		font-size: 28px;
 		line-height: 35px;
 		transform: scaleY(1.65);
 		border-radius: 6px;
 	}
 
-	ul.skills2:before {
-		content: 'Tools';
+	ul.skill-card2:before {
+		content: 'Web Stack';
 	}
 
-	ul.skills3:before {
-		content: 'Codes';
+	ul.skill-card3:before {
+		content: 'tools';
 	}
 
-	ul.skills:after {
+	ul.skill-card:after {
 		content: '';
 		position: absolute;
 		border: 40px solid #fff0;
@@ -220,22 +215,22 @@
 		filter: drop-shadow(0 11px 0.1px var(--w1));
 	}
 
-	ul.skills:hover:before,
-	label:hover + ul.skills:before,
-	input:checked + label + ul.skills:before {
+	ul.skill-card:hover:before,
+	label:hover + ul.skill-card:before,
+	input:checked + label + ul.skill-card:before {
 		transition: var(--t1);
 		background-color: #007ba7;
 		background-position: 0 50%;
 	}
-	ul.skills:hover:after,
-	label:hover + ul.skills:after,
-	input:checked + label + ul.skills:after {
+	ul.skill-card:hover:after,
+	label:hover + ul.skill-card:after,
+	input:checked + label + ul.skill-card:after {
 		top: -20px;
 		transition: var(--t1);
 		border-top-color: #007ba7;
 	}
 
-	ul.skills li {
+	ul.skill-card li {
 		--per: 50;
 		--dur: calc(calc(var(--per) / 100) * 1.5s);
 		margin: 0 0 5px 0;
@@ -247,7 +242,7 @@
 		color: var(--w2);
 	}
 
-	ul.skills li:before {
+	ul.skill-card li:before {
 		content: '';
 		position: absolute;
 		background: #1c1c1c;
@@ -266,7 +261,7 @@
 		);
 	}
 
-	ul.skills li:after {
+	ul.skill-card li:after {
 		content: '';
 		height: 11px;
 		margin: 0 0 2px 0;
@@ -280,14 +275,14 @@
 		animation: start 1s ease 0s 2 alternate;
 	}
 
-	ul.skills li:hover {
+	ul.skill-card li:hover {
 		filter: brightness(1.5);
 		transition: var(--t1);
 	}
 
-	ul.skills:hover li:after,
-	label:hover + ul.skills li:after,
-	input:checked + label + ul.skills li:after {
+	ul.skill-card:hover li:after,
+	label:hover + ul.skill-card li:after,
+	input:checked + label + ul.skill-card li:after {
 		width: calc(calc(var(--per) * 1%) - 2px);
 	}
 
@@ -297,18 +292,18 @@
 		}
 	}
 
-	ul.skills2 li:after {
+	ul.skill-card2 li:after {
 		animation-delay: 0.5s;
 	}
-	ul.skills3 li:after {
+	ul.skill-card3 li:after {
 		animation-delay: 1s;
 	}
 
-	ul.skills li span {
+	ul.skill-card li span {
 		font-weight: 500;
 	}
 
-	ul.skills li span:before {
+	ul.skill-card li span:before {
 		position: absolute;
 		right: -25px;
 		top: 43px;
@@ -318,15 +313,15 @@
 		border: 7px solid #fff0;
 	}
 
-	ul.skills li:hover span:before,
-	.profile-skills input:checked + label + ul.skills li span:before {
+	ul.skill-card li:hover span:before,
+	.profile-skill-card input:checked + label + ul.skill-card li span:before {
 		transition: var(--t1);
 		right: calc(calc(calc(100 - var(--per)) * 1%) - 12px);
 		opacity: 1;
 		border-right-color: #007ba7;
 	}
 
-	ul.skills li span:after {
+	ul.skill-card li span:after {
 		position: absolute;
 		right: -40px;
 		top: 38px;
@@ -342,8 +337,8 @@
 		pointer-events: none;
 	}
 
-	ul.skills li:hover span:after,
-	.profile-skills input:checked + label + ul.skills li span:after {
+	ul.skill-card li:hover span:after,
+	.profile-skill-card input:checked + label + ul.skill-card li span:after {
 		transition: var(--t1);
 		right: calc(calc(85 - var(--per)) * 1%);
 		right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
@@ -352,75 +347,52 @@
 	}
 
 	/*********************/
-	/*** SKILLS VALUES ***/
+	/*** skill-card VALUES ***/
 	/*********************/
 
-	ul.skills li.sk-ani {
-		--per: 85;
-	}
-	ul.skills li.sk-cms {
-		--per: 75;
-	}
-	ul.skills li.sk-dis {
+
+	ul.skill-card li.sk-git {
 		--per: 90;
 	}
-	ul.skills li.sk-dtb {
-		--per: 65;
+	ul.skill-card li.sk-post {
+		--per: 90;
 	}
-	ul.skills li.sk-pro {
-		--per: 60;
-	}
-	ul.skills li.sk-res {
+	ul.skill-card li.sk-npm {
 		--per: 90;
 	}
 
-	ul.skills li.sk-gim {
+	ul.skill-card li.sk-ang {
 		--per: 90;
 	}
-	ul.skills li.sk-ado {
-		--per: 60;
-	}
-	ul.skills li.sk-not {
-		--per: 85;
-	}
-	ul.skills li.sk-tri {
-		--per: 70;
-	}
-	ul.skills li.sk-wor {
+	ul.skill-card li.sk-svel {
 		--per: 90;
 	}
-	ul.skills li.sk-tre {
-		--per: 65;
+	ul.skill-card li.sk-node {
+		--per: 90;
+	}
+	ul.skill-card li.sk-css {
+		--per: 90;
+	}
+	ul.skill-card li.sk-htm {
+		--per: 90;
 	}
 
-	ul.skills li.sk-css {
+	ul.skill-card li.sk-css {
+		--per: 90;
+	}
+	ul.skill-card li.sk-js {
 		--per: 95;
-	}
-	ul.skills li.sk-htm {
-		--per: 90;
-	}
-	ul.skills li.sk-jav {
-		--per: 70;
-	}
-	ul.skills li.sk-php {
-		--per: 80;
-	}
-	ul.skills li.sk-sql {
-		--per: 65;
-	}
-	ul.skills li.sk-pug {
-		--per: 40;
 	}
 
 	/*********************/
 	/***** TOP LABELS ****/
 	/*********************/
 
-	.profile-skills input {
+	.profile-skill-card input {
 		display: none;
 	}
 
-	.profile-skills label {
+	.profile-skill-card label {
 		background: var(--w1);
 		position: absolute;
 		top: -61px;
@@ -434,7 +406,7 @@
 		box-shadow: 0 0 0 0 var(--w1);
 	}
 
-	.profile-skills label:before {
+	.profile-skill-card label:before {
 		content: '';
 		position: absolute;
 		top: 12px;
@@ -446,26 +418,26 @@
 		transition: var(--t1);
 	}
 
-	.profile-skills label:hover {
+	.profile-skill-card label:hover {
 		box-shadow: 0 0 0 3px var(--w1);
 		transition: var(--t1);
 	}
 
-	.profile-skills label:hover:before {
+	.profile-skill-card label:hover:before {
 		border-color: var(--b2);
 		transition: var(--t1);
 	}
 
-	.profile-skills input:checked + label {
+	.profile-skill-card input:checked + label {
 		box-shadow: 0 0 0 6px var(--w1);
 		transition: var(--t1);
 	}
 
-	.profile-skills input:checked + label:before {
+	.profile-skill-card input:checked + label:before {
 		border-color: #007ba7;
 	}
 
-	.profile-skills label:before::before {
+	.profile-skill-card label:before::before {
 		content: '';
 		position: absolute;
 		width: 15px;
@@ -476,7 +448,7 @@
 		transform: translate(-50%, -50%);
 	}
 
-	.profile-skills label:before::after {
+	.profile-skill-card label:before::after {
 		content: '';
 		position: absolute;
 		width: 4px;
@@ -487,7 +459,7 @@
 		transform: translate(-50%, -50%);
 	}
 
-	.profile-skills label:before::after {
+	.profile-skill-card label:before::after {
 		content: '';
 		position: absolute;
 		width: 4px;
@@ -519,39 +491,39 @@
 	/*** BOTTOM LABELS ***/
 	/*********************/
 
-	ul.skills li.more {
+	ul.skill-card li.more {
 		padding: 0;
 		margin-bottom: 20px;
 	}
 
-	ul.skills li.more:before,
-	ul.skills li.more:after {
+	ul.skill-card li.more:before,
+	ul.skill-card li.more:after {
 		display: none;
 	}
 
-	ul.skills li.more:hover {
+	ul.skill-card li.more:hover {
 		filter: none !important;
 	}
 
-	ul.skills li.more div {
+	ul.skill-card li.more div {
 		max-height: 0;
 		transition: var(--t1);
 		overflow: hidden;
 		padding: 0;
 		width: 100%;
 	}
-	ul.skills li.more input:checked ~ div {
+	ul.skill-card li.more input:checked ~ div {
 		max-height: 150px;
 		transition: var(--t1);
 		padding: 20px 0 0;
 	}
 
-	ul.skills li.more div span:before,
-	ul.skills li.more div span:after {
+	ul.skill-card li.more div span:before,
+	ul.skill-card li.more div span:after {
 		display: none;
 	}
 
-	ul.skills li.more label {
+	ul.skill-card li.more label {
 		background: linear-gradient(163deg, var(--b2) 50%, var(--w1) 50%);
 		right: 0;
 		left: inherit;
@@ -566,7 +538,7 @@
 		right: -50px;
 	}
 
-	ul.skills li.more label:before {
+	ul.skill-card li.more label:before {
 		border: 0;
 		height: 100%;
 		width: 100%;
@@ -581,14 +553,14 @@
 		color: var(--c1);
 	}
 
-	ul.skills li.more label:hover {
+	ul.skill-card li.more label:hover {
 		background-position-y: 0%;
 		color: var(--w1) !important;
 		transition: var(--t1);
 		box-shadow: 0 0 0 10px var(--w1);
 	}
 
-	ul.skills li.more span {
+	ul.skill-card li.more span {
 		background: #1c1c1c;
 		border-radius: 1px;
 		margin: 10px 10px 1px 1px;
@@ -598,27 +570,27 @@
 		border-color: #111 #323232 #323232 #111;
 	}
 
-	ul.skills li.more span:hover {
+	ul.skill-card li.more span:hover {
 		color: var(--w0);
 		background: var(--c1);
 		box-shadow: 0px 0px 5px 1px var(--c1);
 		border-color: #fff2;
 	}
 
-	ul.skills li.more input:checked + label {
+	ul.skill-card li.more input:checked + label {
 		box-shadow: 0 0 0 9px var(--w1);
 		background-position-y: 0%;
 		color: var(--w0);
 		bottom: -70px;
 	}
 
-	ul.skills li.more input:checked + label:before {
+	ul.skill-card li.more input:checked + label:before {
 		content: '\2759';
 		transform: rotate(90deg);
 		font-weight: 600;
 	}
 
-	ul.skills li.more input:checked + label:hover {
+	ul.skill-card li.more input:checked + label:hover {
 		box-shadow: 0 0 0 0 var(--w1);
 		background-position-y: 100%;
 		color: var(--b2) !important;
@@ -632,15 +604,15 @@
 		.content {
 			height: 60vh;
 		}
-		.profile-skills {
+		.profile-skill-card {
 			flex-direction: row;
 			flex-wrap: wrap;
 			top: 20px;
 		}
-		.profile-skills > div {
+		.profile-skill-card > div {
 			width: 47% !important;
 		}
-		.profile-skills > div:nth-child(3) {
+		.profile-skill-card > div:nth-child(3) {
 			width: 98% !important;
 			margin-top: 120px;
 		}
@@ -650,31 +622,31 @@
 	/*** Uncomment below code to add the media query for mobile view ***/
 
 	@media only screen and (max-width: 768px) {
-		.content {
+		/* .content {
 			height: 60vh;
-		}
-		.profile-skills {
+		} */
+		.profile-skill-card {
 			flex-direction: row;
 			flex-wrap: wrap;
 			top: 20px;
 		}
-		.profile-skills > div {
+		.profile-skill-card > div {
 			width: 98% !important;
 		}
-		.profile-skills > div:nth-child(2),
-		.profile-skills > div:nth-child(3) {
+		.profile-skill-card > div:nth-child(2),
+		.profile-skill-card > div:nth-child(3) {
 			margin-top: 120px;
 		}
-		ul.skills li:after {
+		ul.skill-card li:after {
 			width: calc(calc(var(--per) * 1%) - 2px);
 		}
-		ul.skills li span:before {
+		ul.skill-card li span:before {
 			transition: var(--t1);
 			right: calc(calc(96.5 - var(--per)) * 1%);
 			opacity: 1;
 			border-right-color: #007ba7;
 		}
-		ul.skills li span:after {
+		ul.skill-card li span:after {
 			transition: var(--t1);
 			right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
 			opacity: 1;

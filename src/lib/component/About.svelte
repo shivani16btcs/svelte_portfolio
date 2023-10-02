@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
+<!-- <div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
 	<h1 class="text-4xl font-bold mb-4">About Me</h1>
 	<div class="mb-4">
 		<img
@@ -34,7 +34,7 @@
 		years, I have worked on various projects, creating beautiful and user-friendly web interfaces.
 		My expertise includes HTML, CSS, JavaScript, and modern frontend frameworks.
 	</p>
-</div>
+</div> -->
 
 
 
