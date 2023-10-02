@@ -17,7 +17,7 @@
 		
 		
 	</div>
-	<div class="relative skill-content flex justify-center pb-32 mt-96 md:mt-36 lg:mt-0  md:mb-0 lg:mb-20 mb-40">
+	<div class="relative skill-content flex justify-center pb-32 mt-96 lg:mt-0  md:mb-10 lg:mb-20 mb-40">
 		<div class="abolute z-0 ">
 			<SkillCards />
 		</div>
