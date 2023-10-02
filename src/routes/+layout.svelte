@@ -5,6 +5,7 @@
 	import Contact from '$lib/component/Contact.svelte';
 	import Home from '$lib/component/Home.svelte';
 	import Service from '$lib/component/Service.svelte';
+	import Skill from '$lib/component/skills/Skill.svelte';
 
 	import './styles.css';
 </script>
@@ -17,8 +18,11 @@
 	<section id="about">
 		<About />
 	</section>
-	<section id="about">
+	<section id="services">
 		<Service />
+	</section>
+	<section id="skills">
+		<Skill />
 	</section>
 	<section id="projects">
 		<Projects />

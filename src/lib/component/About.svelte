@@ -8,8 +8,8 @@
 		animate = true;
 	}
 </script>
-<!-- 
-<div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
+
+<!-- <div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
 	<h1 class="text-4xl font-bold mb-4">About Me</h1>
 	<div class="mb-4">
 		<img
@@ -68,7 +68,7 @@
 
 <style>
   .about{
-    padding:80px 0;
+    padding:100px 0;
   }
 </style>
 

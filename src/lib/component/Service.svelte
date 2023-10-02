@@ -37,7 +37,7 @@
 
 <style>
     .services{
-      padding:80px 0;
+      padding:100px 0;
     }
   </style>
   

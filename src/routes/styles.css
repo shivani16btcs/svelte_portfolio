@@ -63,7 +63,6 @@
   
   .about,
   .services,
-  .skills,
   .projects,
   .contact,
   footer {
@@ -284,8 +283,6 @@
   .skills .skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
   }
   
   .skills .skills-content .right span {
@@ -633,8 +630,8 @@
   
   @media (max-width: 1104px) {
     .about .about-content .left img {
-      height: 350px;
-      width: 350px;
+      height: 250px;
+      width: 250px;
     }
     section .title::after {
       bottom: -8px;
