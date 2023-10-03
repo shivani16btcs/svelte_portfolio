@@ -14,7 +14,7 @@
                         <i class="bi bi-translate"></i>
                         <div class="info">
                             <div class="head">Language Known</div>
-                            <div class="sub-title">Hindi, English</div>
+                            <div class="sub-title">Hindi, English, urdu</div>
                         </div>
                     </div>
 
