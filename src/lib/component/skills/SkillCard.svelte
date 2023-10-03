@@ -172,6 +172,7 @@
 			var(--b2) 0 calc(100% - 10px),
 			var(--c1) 0 100%
 		);
+		border-bottom-left-radius: 6px;
 	}
 
 	ul.skill-card:before {
@@ -222,6 +223,11 @@
 		background-color: #007ba7;
 		background-position: 0 50%;
 	}
+
+	ul.skill-card:hover{
+		box-shadow: 0 0 25px #888e8d, 0 0 25px #888e8d;
+	}
+
 	ul.skill-card:hover:after,
 	label:hover + ul.skill-card:after,
 	input:checked + label + ul.skill-card:after {
@@ -429,7 +435,7 @@
 	}
 
 	.profile-skill-card input:checked + label {
-		box-shadow: 0 0 0 6px var(--w1);
+		/* box-shadow: 0 0 0 6px var(--w1); */
 		transition: var(--t1);
 	}
 
