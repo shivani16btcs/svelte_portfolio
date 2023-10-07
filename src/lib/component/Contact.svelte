@@ -37,10 +37,10 @@
 					Feel free to get in touch with me. I'll be happy to answer your questions and set up a
 					meeting with you. Reach out and let's create something amazing together!
 				</p>
-				<div class="info mt-1">
+				<!-- <div class="info mt-1">
 					<div class="font-semibold">Language Known</div>
 					<div class="sub-title">Hindi, English</div>
-				</div>
+				</div> -->
 				<div class="mt-2">
 					<!-- Social -->
 					<a href="https://www.linkedin.com/in/shivani-yadav-abc/" class="mr-2 contact-social-icon">
