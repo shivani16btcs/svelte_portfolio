@@ -42,8 +42,8 @@
 	<div class="max-width">
 		<h2 class="title">About Me</h2>
 		<div class="about-content">
-			<div class="column left">
-				<img src={profileImage} alt="profileImage" />
+			<div class="column left ">
+				<img src={profileImage} alt="profileImage" class="profile-img" />
 			</div>
 			<div class="column right">
 				<div class="text">Hey there,</div>
@@ -69,6 +69,7 @@
   .about{
     padding:100px 0;
   }
+
 </style>
 
 
