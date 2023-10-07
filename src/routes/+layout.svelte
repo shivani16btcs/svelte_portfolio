@@ -23,7 +23,7 @@
 	</section>
 	<section id="skills">
 		<Skill />
-	</section>
+	</section>	
 	<section id="projects">
 		<Projects />
 	</section>

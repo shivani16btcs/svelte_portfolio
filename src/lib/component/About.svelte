@@ -1,5 +1,4 @@
 <script>
-	import girlIMage from '$lib/images/girl_typing_transparent.gif';
 	import profileImage from '$lib/images/Screenshot_2018-06-10-18-13-59.jpg';
 
 	let animate = false;
@@ -43,8 +42,8 @@
 	<div class="max-width">
 		<h2 class="title">About Me</h2>
 		<div class="about-content">
-			<div class="column left">
-				<img src={profileImage} alt="Profile Image 626x626" />
+			<div class="column left ">
+				<img src={profileImage} alt="profileImage" class="profile-img" />
 			</div>
 			<div class="column right">
 				<div class="text">Hey there,</div>
@@ -70,6 +69,7 @@
   .about{
     padding:100px 0;
   }
+
 </style>
 
 
