@@ -40,11 +40,7 @@
       padding:100px 0;
     }
 
-    .services .serv-content .card i {
-    /* font-size: 50px;
-    color: #888e8d;
-    background: linear-gradient(135deg, #041d3d, #fff, crimson); */
-    }
+    
   </style>
   
   
