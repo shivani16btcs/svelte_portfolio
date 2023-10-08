@@ -8,26 +8,26 @@
 		isMobileMenuOpen = !isMobileMenuOpen;
 	}
 
-	//function to make header 'pin' on down scroll and 'unpin' on upscroll
-	function deriveClass(y = 0, scrolled = 0) {
+	//pin header on up scroll and unpin on down scroll
+	function findHeaderPosition(y = 0, scrolled = 0) {
 		if (y < 0) return 'pin';
 		if (!scrolled || Math.abs(scrolled) < 0) return headerPosition;
 		const dir = scrolled < 0 ? 'down' : 'up';
 		if (dir === 'up') return 'pin';
-		//to check if user scroll more then header height
+		//find if scroll height is more then header height
 		if (dir === 'down' && y > 40) {
 			return 'unpin';
 		}
 		return headerPosition;
 	}
 
-	function updateClass(y = 0) {
+	function checkHeaderPosition(y = 0) {
 		const scrolledPxs = lastY - y;
-		const result = deriveClass(y, scrolledPxs);
+		const result = findHeaderPosition(y, scrolledPxs);
 		lastY = y;
 		return result;
 	}
-	$: headerPosition = updateClass(y);
+	$: headerPosition = checkHeaderPosition(y);
 </script>
 
 
