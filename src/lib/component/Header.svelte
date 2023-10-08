@@ -37,12 +37,12 @@
 	<div class="bg-black text-gray-white p-4">
 		<div class="container mx-auto flex justify-between lg:justify-center items-center">
 			<nav class="hidden md:flex space-x-4 text-lg font-bold leading-10">
-				<a href="#home" class=" hover:text-sky-900 transition">Home</a>
-				<a href="#about" class=" hover:text-sky-900 transition">About</a>
-				<a href="#services" class=" hover:text-sky-900 transition">Services</a>
-				<a href="#skills" class=" hover:text-sky-900 transition">Skills</a>
-				<a href="#projects" class=" hover:text-sky-900 transition">Project</a>
-				<a href="#contact" class=" hover:text-sky-900 transition">Contact</a>
+				<a href="#home" class=" hover:text-sky-800 transition">Home</a>
+				<a href="#about" class=" hover:text-sky-800 transition">About</a>
+				<a href="#services" class=" hover:text-sky-800 transition">Services</a>
+				<a href="#skills" class=" hover:text-sky-800 transition">Skills</a>
+				<a href="#projects" class=" hover:text-sky-800 transition">Project</a>
+				<a href="#contact" class=" hover:text-sky-800 transition">Contact</a>
 			</nav>
 			<div class="md:hidden">
 				<button
@@ -60,11 +60,11 @@
 			: '0'}; overflow: hidden; transition: max-height 0.5s ease-in-out;"
 	>
 		<ul class="py-4">
-			<li><a href="#home" class="block py-2  hover:text-sky-900 transition">Home</a></li>
-			<li><a href="#about" class="block py-2 hover:text-sky-900 transition">About</a></li>
-			<li><a href="#services" class="block py-2 hover:text-sky-900 transition">Services</a></li>
-			<li><a href="#projects" class="block py-2 hover:text-sky-900 transition">Project</a></li>
-			<li><a href="#contact" class="block py-2 hover:text-sky-900 transition">Contact</a></li>
+			<li><a href="#home" class="block py-2  hover:text-sky-800 transition">Home</a></li>
+			<li><a href="#about" class="block py-2 hover:text-sky-800 transition">About</a></li>
+			<li><a href="#services" class="block py-2 hover:text-sky-800 transition">Services</a></li>
+			<li><a href="#projects" class="block py-2 hover:text-sky-800 transition">Project</a></li>
+			<li><a href="#contact" class="block py-2 hover:text-sky-800 transition">Contact</a></li>
 		</ul>
 	</div>
 </div>
