@@ -21,7 +21,6 @@
 </script>
 
 <style>
- 
     .terminal {
       font-family: 'Courier New', monospace;
       background-color: #0a0a0a;
@@ -33,8 +32,11 @@
   
   <div class="min-h-screen flex items-center justify-center">
     <div class="terminal w-full h-screen text-xl">
-      <p>Hello World! I am Shivani </p>
-      <span class="typing"></span>
+      <div class="mt-20">
+        <p>Hello World! I am Shivani </p>
+        <span class="typing"></span>
+      </div>
+     
     </div>
     <img src={girlIMage} alt="Girl" class="absolute bottom-0 right-0 max-h-96 max-w-96" />
   </div>
