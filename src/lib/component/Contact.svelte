@@ -48,7 +48,7 @@
 							type="button"
 							data-te-ripple-init
 							data-te-ripple-color="light"
-							class="hover:animate-bounce   mb-2 inline-block rounded-full px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+							class="hover:animate-bounce mb-2 inline-block rounded-full px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
 							style="background-color: #1e3551"
 						>
 							<svg
@@ -64,7 +64,7 @@
 						</button>
 					</a>
 
-					<a href="https://github.com/shivani16btcs"  class="contact-social-icon">
+					<a href="https://github.com/shivani16btcs" class="contact-social-icon">
 						<button
 							type="button"
 							data-te-ripple-init
@@ -101,17 +101,46 @@
 								/>
 							</div>
 							<div class="field name">
-								<input type="text" name="name" placeholder="Your Name" required />
+								<input
+									class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
+									type="text"
+									autocomplete="off"
+									name="name"
+									placeholder="Your Name"
+									required
+								/>
 							</div>
 							<div class="field email">
-								<input type="email" name="email" placeholder="Your Email" required />
+								<input
+									class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
+									type="email"
+									autocomplete="off"
+									name="email"
+									placeholder="Your Email"
+									required
+								/>
 							</div>
 						</div>
 						<div class="field">
-							<input type="text" name="subject" placeholder="Subject" required />
+							<input
+								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
+								type="text"
+								autocomplete="off"
+								name="subject"
+								placeholder="Subject"
+								required
+							/>
 						</div>
 						<div class="field textarea">
-							<textarea cols="30" rows="10" name="message" placeholder="Message.." required />
+							<textarea
+								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
+								cols="30"
+								autocomplete="off"
+								rows="10"
+								name="message"
+								placeholder="Message.."
+								required
+							/>
 						</div>
 						<div class="button-area">
 							<button type="submit">Send message</button>
@@ -130,20 +159,78 @@
 						</div> -->
 						<div aria-label="Loading..." role="status" class="flex items-center space-x-2">
 							<svg class="h-20 w-20 animate-spin stroke-sky-900" viewBox="0 0 256 256">
-								<line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
-								<line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round"
-									stroke-width="24"></line>
-								<line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
-								</line>
-								<line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
-									stroke-width="24"></line>
-								<line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
-								</line>
-								<line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round"
-									stroke-width="24"></line>
-								<line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
-								<line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
-								</line>
+								<line
+									x1="128"
+									y1="32"
+									x2="128"
+									y2="64"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="195.9"
+									y1="60.1"
+									x2="173.3"
+									y2="82.7"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="224"
+									y1="128"
+									x2="192"
+									y2="128"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="195.9"
+									y1="195.9"
+									x2="173.3"
+									y2="173.3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="128"
+									y1="224"
+									x2="128"
+									y2="192"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="60.1"
+									y1="195.9"
+									x2="82.7"
+									y2="173.3"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="32"
+									y1="128"
+									x2="64"
+									y2="128"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
+								<line
+									x1="60.1"
+									y1="60.1"
+									x2="82.7"
+									y2="82.7"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								/>
 							</svg>
 							<span class="text-4xl font-medium text-sky-900">Loading...</span>
 						</div>
@@ -198,6 +285,4 @@
 	.contact {
 		padding: 100px 0;
 	}
-
-	
 </style>
