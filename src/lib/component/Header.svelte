@@ -28,21 +28,47 @@
 		return result;
 	}
 	$: headerPosition = checkHeaderPosition(y);
-</script>
 
+	// Add an array to store the section IDs
+	const sectionIds = ['home', 'about', 'services', 'skills', 'projects', 'contact'];
+	let activeSection = sectionIds[0]; // Initialize with the first section
+
+	// Function to determine the active section based on scroll position
+	function setActiveSection() {
+		for (const id of sectionIds) {
+			const section = document.getElementById(id);
+			if (section) {
+				const rect = section.getBoundingClientRect();
+				if (rect.top <= 100 && rect.bottom >= 100) {
+					activeSection = id;
+					console.log("activeSection",activeSection)
+					break;
+				}
+			}
+		}
+	}
+
+	// Call setActiveSection on scroll
+	function handleScroll() {
+		setActiveSection();
+	}
+
+	// Add a scroll event listener to the window
+	window.addEventListener('scroll', handleScroll);
+</script>
 
 <svelte:window bind:scrollY={y} />
 
 <div class="header z-50 {headerPosition == 'unpin' ? 'hidden' : ''}">
-	<div class="bg-black text-gray-white p-4">
+	<div class="text-gray-white p-4">
 		<div class="container mx-auto flex justify-between lg:justify-center items-center">
-			<nav class="hidden md:flex space-x-4 text-lg font-bold leading-10">
-				<a href="#home" class=" hover:text-sky-800 transition">Home</a>
-				<a href="#about" class=" hover:text-sky-800 transition">About</a>
-				<a href="#services" class=" hover:text-sky-800 transition">Services</a>
-				<a href="#skills" class=" hover:text-sky-800 transition">Skills</a>
-				<a href="#projects" class=" hover:text-sky-800 transition">Project</a>
-				<a href="#contact" class=" hover:text-sky-800 transition">Contact</a>
+			<nav class="hidden md:flex space-x-8 text-lg font-semibold leading-10">
+				<a href="#home" class=" hover:text-sky-800 transition {activeSection==sectionIds[0]?'active':''}" >Home</a>
+				<a href="#about" class=" hover:text-sky-800 transition {activeSection==sectionIds[1]?'active':''}">About</a>
+				<a href="#services" class=" hover:text-sky-800 transition {activeSection==sectionIds[2]?'active':''}">Services</a>
+				<a href="#skills" class=" hover:text-sky-800 transition {activeSection==sectionIds[3]?'active':''}">Skills</a>
+				<a href="#projects" class=" hover:text-sky-800 transition {activeSection==sectionIds[4]?'active':''}">Project</a>
+				<a href="#contact" class=" hover:text-sky-800 transition {activeSection==sectionIds[5]?'active':''}">Contact</a>
 			</nav>
 			<div class="md:hidden">
 				<button
@@ -60,28 +86,32 @@
 			: '0'}; overflow: hidden; transition: max-height 0.5s ease-in-out;"
 	>
 		<ul class="py-4">
-			<li><a href="#home" class="block py-2  hover:text-sky-800 transition">Home</a></li>
-			<li><a href="#about" class="block py-2 hover:text-sky-800 transition">About</a></li>
-			<li><a href="#services" class="block py-2 hover:text-sky-800 transition">Services</a></li>
-			<li><a href="#projects" class="block py-2 hover:text-sky-800 transition">Project</a></li>
-			<li><a href="#contact" class="block py-2 hover:text-sky-800 transition">Contact</a></li>
+			<li><a href="#home" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[0]?'active':''}">Home</a></li>
+			<li><a href="#about" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[1]?'active':''}">About</a></li>
+			<li><a href="#services" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[2]?'active':''}">Services</a></li>
+			<li><a href="#skills" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[3]?'active':''}">Skills</a></li>
+			<li><a href="#projects" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[4]?'active':''}">Project</a></li>
+			<li><a href="#contact" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[5]?'active':''}">Contact</a></li>
 		</ul>
 	</div>
 </div>
 
-
-
-
 <style>
-.text-gray-white{
-	color: #CCCCCC;
-}
+	.text-gray-white {
+		color: #cccccc;
+	}
 
-.header{
-  position: fixed;
-  top: 0;
-  transition: top 0.2s ease-in-out;
-  width: 100%;
-}
+	.header {
+		position: fixed;
+		top: 0;
+		transition: top 0.2s ease-in-out;
+		width: 100%;
+		background: #0a0a0a;
+	}
 
+.active{
+	--tw-text-opacity: 1;
+    color: rgb(7 89 133 / var(--tw-text-opacity));
+	text-decoration: underline;
+}
 </style>
