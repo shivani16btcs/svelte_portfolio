@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	let isMobileMenuOpen = false;
 	let headerPosition = 'pin';
 	let y = 0;
@@ -41,7 +43,7 @@
 				const rect = section.getBoundingClientRect();
 				if (rect.top <= 100 && rect.bottom >= 100) {
 					activeSection = id;
-					console.log("activeSection",activeSection)
+					console.log('activeSection', activeSection);
 					break;
 				}
 			}
@@ -53,8 +55,11 @@
 		setActiveSection();
 	}
 
-	// Add a scroll event listener to the window
-	window.addEventListener('scroll', handleScroll);
+	onMount(async () => {
+		if (typeof window !== 'undefined') {
+			window.addEventListener('scroll', handleScroll);
+		}
+	});
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -63,12 +68,36 @@
 	<div class="text-gray-white p-4">
 		<div class="container mx-auto flex justify-between lg:justify-center items-center">
 			<nav class="hidden md:flex space-x-8 text-lg font-semibold leading-10">
-				<a href="#home" class=" hover:text-sky-800 transition {activeSection==sectionIds[0]?'active':''}" >Home</a>
-				<a href="#about" class=" hover:text-sky-800 transition {activeSection==sectionIds[1]?'active':''}">About</a>
-				<a href="#services" class=" hover:text-sky-800 transition {activeSection==sectionIds[2]?'active':''}">Services</a>
-				<a href="#skills" class=" hover:text-sky-800 transition {activeSection==sectionIds[3]?'active':''}">Skills</a>
-				<a href="#projects" class=" hover:text-sky-800 transition {activeSection==sectionIds[4]?'active':''}">Project</a>
-				<a href="#contact" class=" hover:text-sky-800 transition {activeSection==sectionIds[5]?'active':''}">Contact</a>
+				<a
+					href="#home"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[0] ? 'active' : ''}"
+					>Home</a
+				>
+				<a
+					href="#about"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[1] ? 'active' : ''}"
+					>About</a
+				>
+				<a
+					href="#services"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[2] ? 'active' : ''}"
+					>Services</a
+				>
+				<a
+					href="#skills"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[3] ? 'active' : ''}"
+					>Skills</a
+				>
+				<a
+					href="#projects"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[4] ? 'active' : ''}"
+					>Project</a
+				>
+				<a
+					href="#contact"
+					class=" hover:text-sky-800 transition {activeSection == sectionIds[5] ? 'active' : ''}"
+					>Contact</a
+				>
 			</nav>
 			<div class="md:hidden">
 				<button
@@ -86,12 +115,54 @@
 			: '0'}; overflow: hidden; transition: max-height 0.5s ease-in-out;"
 	>
 		<ul class="py-4">
-			<li><a href="#home" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[0]?'active':''}">Home</a></li>
-			<li><a href="#about" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[1]?'active':''}">About</a></li>
-			<li><a href="#services" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[2]?'active':''}">Services</a></li>
-			<li><a href="#skills" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[3]?'active':''}">Skills</a></li>
-			<li><a href="#projects" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[4]?'active':''}">Project</a></li>
-			<li><a href="#contact" class="block py-2 hover:text-sky-800 transition {activeSection==sectionIds[5]?'active':''}">Contact</a></li>
+			<li>
+				<a
+					href="#home"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[0]
+						? 'active'
+						: ''}">Home</a
+				>
+			</li>
+			<li>
+				<a
+					href="#about"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[1]
+						? 'active'
+						: ''}">About</a
+				>
+			</li>
+			<li>
+				<a
+					href="#services"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[2]
+						? 'active'
+						: ''}">Services</a
+				>
+			</li>
+			<li>
+				<a
+					href="#skills"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[3]
+						? 'active'
+						: ''}">Skills</a
+				>
+			</li>
+			<li>
+				<a
+					href="#projects"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[4]
+						? 'active'
+						: ''}">Project</a
+				>
+			</li>
+			<li>
+				<a
+					href="#contact"
+					class="block py-2 hover:text-sky-800 transition {activeSection == sectionIds[5]
+						? 'active'
+						: ''}">Contact</a
+				>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -109,9 +180,9 @@
 		background: #0a0a0a;
 	}
 
-.active{
-	--tw-text-opacity: 1;
-    color: rgb(7 89 133 / var(--tw-text-opacity));
-	text-decoration: underline;
-}
+	.active {
+		--tw-text-opacity: 1;
+		color: rgb(7 89 133 / var(--tw-text-opacity));
+		text-decoration: underline;
+	}
 </style>
