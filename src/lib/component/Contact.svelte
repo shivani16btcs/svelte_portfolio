@@ -29,7 +29,7 @@
 
 <section class="contact" id="contact">
 	<div class="max-width">
-		<h2 class="title">Contact Me</h2>
+		<h2 class="title">Contact</h2>
 		<div class="contact-content">
 			<div class="column left">
 				<div class="text">Get in Touch</div>

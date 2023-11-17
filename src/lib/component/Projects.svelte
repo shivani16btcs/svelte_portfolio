@@ -8,7 +8,7 @@
 
 <section class="projects" id="projects">
 	<div class="max-width">
-		<h2 class="title">My Projects</h2>
+		<h2 class="title"> Projects</h2>
 		<div class="carousel owl-carousel">
 			<a href="https://snack-it.vercel.app/home" target="_blank">
 				<div class="card">
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="https://shivani-portfolio-eight-rouge.vercel.app/" target="_blank">
+			<a href="shivani-portfolio-621744169.vercel.app/" target="_blank">
 				<div class="card">
 					<div class="box">
 						<img src={Portfolio} alt="" />
