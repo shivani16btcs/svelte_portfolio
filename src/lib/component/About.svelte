@@ -40,7 +40,7 @@
 
 <section class="about" id="about">
 	<div class="max-width">
-		<h2 class="title">About Me</h2>
+		<h2 class="title">About</h2>
 		<div class="about-content">
 			<div class="column left ">
 				<img src={profileImage} alt="profileImage" class="profile-img" />
