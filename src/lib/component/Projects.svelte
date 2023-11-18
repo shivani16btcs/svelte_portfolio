@@ -110,7 +110,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="shivani-portfolio-621744169.vercel.app/" target="_blank">
+			<a href="https://shivani-portfolio-621744169.vercel.app/" target="_blank">
 				<div class="card">
 					<div class="box">
 						<img src={Portfolio} alt="" />
@@ -137,7 +137,7 @@
 								Code
 							</a>
 							<a
-								href="shivani-portfolio-621744169.vercel.app/"
+								href="https://shivani-portfolio-621744169.vercel.app/"
 								class="text-white bg-[#24292F] hover:border hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2"
 							>
 								<svg
