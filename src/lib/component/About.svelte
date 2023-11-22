@@ -1,6 +1,6 @@
 <script>
 	import profileImage from '$lib/images/Screenshot_2018-06-10-18-13-59.jpg';
-	import helloWave from '$lib/images/Hello_wave.gif'
+	import helloWave from '$lib/images/Hello_wave.gif';
 </script>
 
 <!-- <div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
