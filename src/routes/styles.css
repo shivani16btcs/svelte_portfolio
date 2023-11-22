@@ -124,6 +124,8 @@
   
   .about .about-content .left {
     width: 45%;
+    display: flex;
+    justify-content: center;
   }
   
   .about .about-content .left img {

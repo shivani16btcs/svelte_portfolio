@@ -1,4 +1,5 @@
 <script>
+	import contactUSIMG from '$lib/images/bird_with_letter_transparent.gif';
 	let status = '';
 	let isContactFormSubmitted = false;
 	let isLoading = false;
@@ -32,59 +33,12 @@
 		<h2 class="title">Contact</h2>
 		<div class="contact-content">
 			<div class="column left">
-				<div class="text">Get in Touch</div>
+				<!-- <div class="text">Get in Touch</div>
 				<p>
 					Feel free to get in touch with me. I'll be happy to answer your questions and set up a
 					meeting with you. Reach out and let's create something amazing together!
-				</p>
-				<!-- <div class="info mt-1">
-					<div class="font-semibold">Language Known</div>
-					<div class="sub-title">Hindi, English</div>
-				</div> -->
-				<div class="mt-2">
-					<!-- Social -->
-					<a href="https://www.linkedin.com/in/shivani-yadav-abc/" class="mr-2 contact-social-icon">
-						<button
-							type="button"
-							data-te-ripple-init
-							data-te-ripple-color="light"
-							class="hover:animate-bounce mb-2 inline-block rounded-full px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-							style="background-color: #1e3551"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-3 w-3"
-								fill="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path
-									d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-								/>
-							</svg>
-						</button>
-					</a>
-
-					<a href="https://github.com/shivani16btcs" class="contact-social-icon">
-						<button
-							type="button"
-							data-te-ripple-init
-							data-te-ripple-color="light"
-							class="hover:animate-bounce mb-2 inline-block rounded-full px-3 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-							style="background-color: #1e3551"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-3 w-3"
-								fill="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path
-									d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-								/>
-							</svg>
-						</button>
-					</a>
-				</div>
+				</p> -->
+				<img src={contactUSIMG} alt="Girl" />
 			</div>
 
 			<!-- Reach -->
@@ -99,6 +53,7 @@
 									name="access_key"
 									value="74d037ea-59bb-4766-80a2-1fda92e1cb69"
 								/>
+								<input type="hidden" name="subject" value="portfolio contact us request" />
 							</div>
 							<div class="field name">
 								<input
@@ -121,16 +76,6 @@
 								/>
 							</div>
 						</div>
-						<div class="field">
-							<input
-								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
-								type="text"
-								autocomplete="off"
-								name="subject"
-								placeholder="Subject"
-								required
-							/>
-						</div>
 						<div class="field textarea">
 							<textarea
 								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
@@ -143,20 +88,13 @@
 							/>
 						</div>
 						<div class="button-area">
-							<button type="submit">Send message</button>
+							<button type="submit">Submit</button>
 						</div>
+
+						
 					</form>
 				{:else if isLoading}
 					<div class="flex justify-center items-center">
-						<!-- <div
-							class="h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] text-sky-900 motion-reduce:animate-[spin_1.5s_linear_infinite]"
-							role="status"
-						>
-							<span
-								class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-								>Loading...</span
-							>
-						</div> -->
 						<div aria-label="Loading..." role="status" class="flex items-center space-x-2">
 							<svg class="h-20 w-20 animate-spin stroke-sky-900" viewBox="0 0 256 256">
 								<line
@@ -279,10 +217,33 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="flex flex-wrap justify-center gap-3 mt-20">
+							
+		_
+		<button class="bg-sky-900 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full
+		hover:scale-105">
+		  <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+			<g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
+		  </svg>
+		</button>
+
+		
+		<button class="bg-sky-900 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full hover:scale-105">
+		  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+			<g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" /></g>
+		  </svg>
+		</button>
+		_
+	  </div>
 </section>
 
 <style>
 	.contact {
 		padding: 100px 0;
+	}
+
+	.title {
+		margin-bottom: 0px !important;
 	}
 </style>
