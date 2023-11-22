@@ -85,7 +85,7 @@
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-family: "Ubuntu", sans-serif;
   }
   
@@ -115,7 +115,7 @@
     background: radial-gradient(#e1efff, white);
   }
   .about .title::after {
-    content: "—Who I Am ?—";
+    /* content: "—Who I Am ?—"; */
     text-overflow: ellipsis;
     display: -webkit-inline-box;
     -webkit-line-clamp: 3;
@@ -230,9 +230,9 @@
   .skills {
     background: radial-gradient(#e1efff, white);
   }
-  .skills .title::after {
+  /* .skills .title::after {
     content: "—What I Know ?—";
-  }
+  } */
   
   .skills .skills-content .column {
     width: calc(50% - 30px);
