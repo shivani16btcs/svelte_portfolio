@@ -244,6 +244,6 @@
 	}
 
 	.title {
-		margin-bottom: 0px !important;
+		margin-bottom: 60px !important;
 	}
 </style>

@@ -1,11 +1,6 @@
 <script>
 	import profileImage from '$lib/images/Screenshot_2018-06-10-18-13-59.jpg';
-
-	let animate = false;
-
-	function startAnimation() {
-		animate = true;
-	}
+	import helloWave from '$lib/images/Hello_wave.gif';
 </script>
 
 <!-- <div class="bg-black text-green-500 p-8 text-center flex flex-col items-center">
@@ -46,7 +41,9 @@
 				<img src={profileImage} alt="profileImage" class="profile-img" />
 			</div>
 			<div class="column right">
-				<div class="text">Hey there,</div>
+				<div class="text flex">Hey there,
+					<img src={helloWave} alt="profileImage" class="w-8 h-8" />
+				</div>
 				<p class="text-gray-700 text-lg leading-relaxed">
 					I'm Shivani Yadav, a web developer based in Uttar Pradesh, India. Coding and design are my
 					creative playground.
