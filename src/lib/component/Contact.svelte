@@ -1,5 +1,5 @@
 <script>
-	import contactUSIMG from '$lib/images/contact_us_gif_tranparent_bg.gif';
+	import contactUSIMG from '$lib/images/bird_with_letter_transparent.gif';
 	let status = '';
 	let isContactFormSubmitted = false;
 	let isLoading = false;
@@ -53,6 +53,11 @@
 									name="access_key"
 									value="74d037ea-59bb-4766-80a2-1fda92e1cb69"
 								/>
+								<!-- <input
+									type="hidden"
+									name="subject"
+									value="portfolio contact us request"
+								/> -->
 							</div>
 							<div class="field name">
 								<input
@@ -75,16 +80,6 @@
 								/>
 							</div>
 						</div>
-						<div class="field">
-							<input
-								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
-								type="text"
-								autocomplete="off"
-								name="subject"
-								placeholder="Subject"
-								required
-							/>
-						</div>
 						<div class="field textarea">
 							<textarea
 								class="border border-transparent focus:outline-none focus:ring-2 focus:ring-sky-900 focus:border-transparent"
@@ -97,7 +92,7 @@
 							/>
 						</div>
 						<div class="button-area">
-							<button type="submit">Send message</button>
+							<button type="submit">Submit</button>
 						</div>
 					</form>
 				{:else if isLoading}
@@ -238,5 +233,9 @@
 <style>
 	.contact {
 		padding: 100px 0;
+	}
+
+	.title{
+		margin-bottom: 0px !important;
 	}
 </style>
