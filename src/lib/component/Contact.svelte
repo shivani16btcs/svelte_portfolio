@@ -53,11 +53,11 @@
 									name="access_key"
 									value="74d037ea-59bb-4766-80a2-1fda92e1cb69"
 								/>
-								<!-- <input
+								<input
 									type="hidden"
 									name="subject"
 									value="portfolio contact us request"
-								/> -->
+								/>
 							</div>
 							<div class="field name">
 								<input
