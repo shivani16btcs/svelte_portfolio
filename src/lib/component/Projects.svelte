@@ -278,4 +278,7 @@
 	.projects {
 		padding: 100px 0;
 	}
+	.box img{
+		display: inline;
+	}
 </style>
