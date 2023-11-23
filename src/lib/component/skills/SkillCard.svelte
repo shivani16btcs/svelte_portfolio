@@ -190,7 +190,7 @@
 		font-weight: 500;
 		z-index: 1;
 		transition: var(--t1);
-		font-size: 25px;
+		font-size: 20px;
 		line-height: 35px;
 		transform: scaleY(1.65);
 		border-radius: 6px;
