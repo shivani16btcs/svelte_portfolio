@@ -218,7 +218,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-wrap justify-center gap-3 mt-20 text-sky-900 font-bold">
+	<div class="flex flex-wrap justify-center gap-3 mt-20 text-sky-800 font-bold ">
 							
 		_
 		<a href="https://www.linkedin.com/in/shivani-yadav-abc/" class="bg-sky-900 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full

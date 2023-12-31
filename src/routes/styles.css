@@ -167,7 +167,7 @@
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 25px;
     border: 2px solid #1e3551;
     transition: all 0.3s ease;
   }
@@ -503,6 +503,22 @@
     display: flex;
     align-items: center;
   }
+
+  .right form .disabled-btn button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    background: #3e5674;
+    border: 2px solid #3e5674;
+    transition: all 0.3s ease;
+    cursor: not-allowed;
+  }
   
   .right form .button-area button {
     color: #fff;
@@ -512,7 +528,7 @@
     outline: none;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
     flex-wrap: nowrap;
     background: #1e3551;

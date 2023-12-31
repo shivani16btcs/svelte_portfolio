@@ -12,7 +12,7 @@
 			strings: strings,
 			typeSpeed: 50,
 			backSpeed: 50,
-            loop:true
+      loop:true
 		};
 
 		// Initialize Typed.js
@@ -26,19 +26,19 @@
       background-color: #0a0a0a;
       color: #CCCCCC;
       padding: 2rem;
-      border: 2px solid #1e3551;
+      /* border: 2px solid #1e3551; */
     }
   </style>
   
   <div class="min-h-screen flex items-center justify-center">
     <div class="terminal w-full h-screen text-xl">
-      <div class="mt-20">
+      <div class="mt-20 ml-5">
         <p>Hello World! I am Shivani </p>
         <span class="typing"></span>
       </div>
      
     </div>
-    <img src={girlIMage} alt="Girl" class="absolute bottom-0 right-0 max-h-96 max-w-96" />
+    <img src={girlIMage} alt="Girl" class="girl-img absolute bottom-0 right-0 max-h-96 max-w-96" />
   </div>
 
 

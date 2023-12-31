@@ -65,7 +65,7 @@
 					<div>
 						<span>API</span><span>Express.js</span><span>SQL</span><span>REST</span><span
 							>MongoDB</span
-						><span>GIT</span>
+						>
 					</div>
 				</li>
 			</ul>
@@ -98,7 +98,6 @@
 					<input type="checkbox" id="more-con" /><label for="more-con" />
 					<div>
 						<span>JIRA</span><span>TRELLO</span><span>CMS</span><span>Jenkins</span><span>Vercel</span>
-						<span>GIT</span>
 					</div>
 				</li>
 			</ul>
@@ -120,27 +119,6 @@
 		--t1: all 0.5s ease 0s;
 	}
 
-	/* body {
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		height: 100vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: 'Roboto', sans-serif;
-		font-size: 15px;
-	}
-
-	* {
-		box-sizing: border-box;
-	}
-
-	*:before,
-	*:after {
-		box-sizing: border-box;
-		content: '';
-	} */
 
 	.content {
 		width: 80vw;
@@ -238,7 +216,7 @@
 
 	ul.skill-card li {
 		--per: 50;
-		--dur: calc(calc(var(--per) / 100) * 1.5s);
+		--dur: calc(calc(var(--per) / 100) * 0s);
 		margin: 0 0 5px 0;
 		list-style: none;
 		padding: 20px 0;
