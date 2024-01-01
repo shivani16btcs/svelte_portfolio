@@ -22,7 +22,7 @@
 
 <style>
     .terminal {
-      font-family: 'Courier New', monospace;
+      /* font-family: 'Courier New', monospace; */
       background-color: #0a0a0a;
       color: #CCCCCC;
       padding: 2rem;
