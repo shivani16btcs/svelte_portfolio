@@ -28,6 +28,9 @@
       padding: 2rem;
       /* border: 2px solid #1e3551; */
     }
+    .girl-img{
+	filter: drop-shadow(1px 1px 20px white);
+     }
   </style>
   
   <div class="min-h-screen flex items-center justify-center">
