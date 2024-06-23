@@ -29,7 +29,7 @@
       /* border: 2px solid #1e3551; */
     }
     .girl-img{
-	filter: drop-shadow(1px 1px 20px #e1efff);
+	filter: drop-shadow(1px 1px 20px white);
      }
   </style>
   
