@@ -1,5 +1,6 @@
 <script>
 	import contactUSIMG from '$lib/images/bird_with_letter_transparent.gif';
+	import Button3D from './Button3D.svelte';
 	let status = '';
 	let isContactFormSubmitted = false;
 	let isLoading = false;
@@ -87,9 +88,10 @@
 								required
 							/>
 						</div>
-						<div class="button-area">
-							<button type="submit">Submit</button>
+						<div>
+							<button type="submit"><Button3D text="Submit" link={null} /></button>
 						</div>
+						
 
 						
 					</form>
