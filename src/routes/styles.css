@@ -159,24 +159,6 @@
     text-align: justify;
   }
   
-  .about .about-content .right a {
-    display: inline-block;
-    background: #1e3551;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 25px;
-    border: 2px solid #1e3551;
-    transition: all 0.3s ease;
-  }
-  
-  .about .about-content .right a:hover {
-    color: #1e3551;
-    background: none;
-    animation: pulsate 1s ease-in-out;
-  }
   
   /*  Service  */
   .services,

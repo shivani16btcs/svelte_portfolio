@@ -1,7 +1,7 @@
 <!-- Services -->
 <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">services</h2>
+        <h2 class="title">How I Can Help</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box">
