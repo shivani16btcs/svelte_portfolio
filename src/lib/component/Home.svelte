@@ -1,18 +1,23 @@
 <script>
 	import { onMount } from 'svelte';
 	import Typed from 'typed.js';
-  import girlIMage from '$lib/images/girl_typing_transparent.gif';
+	import girlImage from '$lib/images/girl_typing_transparent.gif';
 
 	let typed;
 
 	onMount(() => {
-		const strings = ['I like <b>Html</b>', 'I love <b>JavaScript</b>', 'I am <b>Web Developer</b>'];
+		const strings = [
+			'<b>Web Developer</b>',
+			'<b>Frontend Specialist</b>',
+			'<b>Problem Solver</b>',
+			'<b>Tech Explorer</b>'
+		];
 
 		const options = {
 			strings: strings,
 			typeSpeed: 50,
 			backSpeed: 50,
-      loop:true
+			loop: true
 		};
 
 		// Initialize Typed.js
@@ -20,28 +25,26 @@
 	});
 </script>
 
+<div class="min-h-screen flex items-center justify-center">
+	<div class="terminal w-full h-screen text-xl">
+		<div class="mt-20 ml-5">
+			<p>Hello World! I am Shivani</p>
+			<p>
+				I am a passionate <span class="typing" />.
+			</p>
+			<p>Let's create something impactful together!</p>
+		</div>
+	</div>
+	<img src={girlImage} alt="Girl typing on laptop" class="girl-img absolute bottom-0 right-0 max-h-96 max-w-96" />
+</div>
+
 <style>
-    .terminal {
-      /* font-family: 'Courier New', monospace; */
-      background-color: #0a0a0a;
-      color: #CCCCCC;
-      padding: 2rem;
-      /* border: 2px solid #1e3551; */
-    }
-    .girl-img{
-	filter: drop-shadow(1px 1px 20px white);
-     }
-  </style>
-  
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="terminal w-full h-screen text-xl">
-      <div class="mt-20 ml-5">
-        <p>Hello World! I am Shivani </p>
-        <span class="typing"></span>
-      </div>
-     
-    </div>
-    <img src={girlIMage} alt="Girl" class="girl-img absolute bottom-0 right-0 max-h-96 max-w-96" />
-  </div>
-
-
+	.terminal {
+		background-color: #0a0a0a;
+		color: #cccccc;
+		padding: 2rem;
+	}
+	.girl-img {
+		filter: drop-shadow(1px 1px 20px white);
+	}
+</style>
